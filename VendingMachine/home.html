@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Vending Machine</title>
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <style>
+
+            ul{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+
+            .column1{
+                width: 60%;
+                float: left;
+            }
+
+            .column2{
+                width: 40%;
+                float: left;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <h1 class="text-center">Vending Machine</h1>
+        <hr>
+
+        <div class="col-md-12" id="mainDiv">
+            <div class="column1" id="itemTableDiv">
+                <table id="itemTable" class="table">
+
+                    <ul id = "contentRows"></ul>
+
+                </table>
+
+            </div>
+
+            <div class="column2" id="formDiv">
+                <br>
+                <form id="totalForm">
+                    <p>Total $ In</p>
+                    <p><input type="text" id="totalField" disabled value="0.00"></p>                            
+                        <ul>
+                            <button type="button" id="addDollar">Add Dollar</button>                                                                
+                            <button type="button" id="addQuarter">Add Quarter</button>
+                        </ul>
+                        <ul>
+                            <button type="button" id="addDime">Add Dime</button>                                                                       
+                            <button type="button" id="addNickel">Add Nickel</button>
+                        </ul>   
+                </form>
+                <hr>
+
+                <form id="messageForm">
+                        <p>Messages</p>
+                        <p><input type="text" id="messageField" disabled></p>  
+                        
+                        <p>Item: <input type="text" id="itemField" disabled></p>
+                        <button type="button" id="makePurchase">Make Purchase</button>  
+                </form>
+                <hr>
+
+                <form id="changeForm">
+                        <p>Change</p>
+                        <p><input type="text" id="changeField" size="35" disabled></p>
+                        <button type="button" id="changeReturn">Change Return</button>  
+                </form>
+                <hr>
+            </div>
+
+        </div>
+
+
+
+ 
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <script src="js/bootstrap.js"></script>	
+    <script src="js/home.js"></script>
+    </body>
+    
+</html>
